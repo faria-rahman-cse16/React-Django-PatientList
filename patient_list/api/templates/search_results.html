@@ -1,0 +1,21 @@
+<h1>Search Results</h1>
+
+<ul>
+  {% for list in object_list %}
+    <li>
+      <h5>Name: {{ list.name }}</h5>
+    </li>
+	<li>
+      <h5>Age: {{ list.age }}</h5>
+    </li>
+	<li>
+      <h5>Address: {{ list.address }}</h5>
+    </li>
+	<li>
+      <h5>Contact_no: {{ list.contact_no }}</h5>
+    </li>
+	<li>
+      <h5>Date: {{ list.date }}</h5>
+    </li>
+  {% endfor %}
+</ul>
